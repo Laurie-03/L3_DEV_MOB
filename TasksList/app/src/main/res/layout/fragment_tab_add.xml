@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".TabAddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="40dp">
+
+        <EditText
+            android:id="@+id/task_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreyLight"
+            android:hint="@string/task_name_input"
+            android:textColorHint="@color/colorGrey"
+            android:textColor="@color/colorGreyDark"
+            android:textSize="16sp"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/task_description_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreyLight"
+            android:hint="@string/task_description_input"
+            android:textColorHint="@color/colorGrey"
+            android:textColor="@color/colorGreyDark"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_marginTop="16dp" />
+
+        <DatePicker
+            android:id="@+id/task_date_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/task_duration_input_int"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGreyLight"
+                android:hint="@string/task_duration_input_int"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="16sp"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/task_duration_input_string"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGreyLight"
+                android:hint="@string/task_duration_input_string"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/task_add_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/task_add_button"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+
+</ScrollView>

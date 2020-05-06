@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TasksList</string>
+
+    <string name="tab_list">Liste des tâches</string>
+    <string name="tab_add">Ajouter une tâche</string>
+    <string name="tab_calendar">Calendrier</string>
+
+    <string name="task_name_input">Nom</string>
+    <string name="task_description_input">Description</string>
+    <string name="task_date_input">Date</string>
+    <string name="task_duration_input_int">Num</string>
+    <string name="task_duration_input_string">Durée</string>
+
+
+    <string name="task_add_button">Ajouter</string>
+    <string name="task_delete_button">Supprimer</string>
+</resources>
