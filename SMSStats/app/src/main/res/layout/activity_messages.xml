@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyDark"
+    tools:context=".MessagesActivity">
+
+    <LinearLayout
+        android:id="@+id/hidden_layout"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/message_inputs_layout"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/quick_message_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreyLight"
+            android:text="@string/quick_messages"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp" />
+
+        <Button
+            android:id="@+id/programmed_message_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreyLight"
+            android:text="@string/programmed_messages"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_inputs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorGreyLight"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/expand_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_expand" />
+
+        <EditText
+            android:id="@+id/message_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/message_input"
+            android:textColorHint="@color/colorGrey"
+            android:textColor="@color/colorGreyDark"
+            android:paddingHorizontal="16dp"
+            android:layout_toEndOf="@+id/expand_button"
+            android:layout_toRightOf="@+id/expand_button"
+            android:layout_toStartOf="@+id/send_button"
+            android:layout_toLeftOf="@+id/send_button" />
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_send"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
